@@ -6,8 +6,10 @@
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-poke-sprites": "0.0.4",
+    "react-redux": "^5.0.7",
     "react-responsive-spritesheet": "^2.3.9",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
