@@ -2,6 +2,7 @@
 ## Table of Contents
 - [Installation](#installation)
 - [Setup](#setup)
+- [Game design document(GDD)](https://github.com/ilaydagurbak/xulapp/blob/master/GDD.md)
 ## Installation
 
 Clone the repository with the following command
