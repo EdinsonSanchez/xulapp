@@ -1,10 +1,12 @@
 import React from 'react'
 import Player from '../player'
+import Boss from '../boss'
 import Map from '../map'
 
 function Container(props) {
     return (
         <div 
+        className="level1"
         style={{
             position: 'relative',
             width: '800px',
@@ -14,6 +16,7 @@ function Container(props) {
         >
             <Map />
             <Player />
+            <Boss/>
         </div>
     )
 }

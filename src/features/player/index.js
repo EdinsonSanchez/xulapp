@@ -5,6 +5,7 @@ import handleMovement from './movement'
 
 
 function Player(props) {
+    
     return (
         <div
         
