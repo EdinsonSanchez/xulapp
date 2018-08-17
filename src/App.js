@@ -1,21 +1,29 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Spritesheet from 'react-responsive-spritesheet';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Spritesheet
+          className={`my-element__class--style`}
+          image={`https://raw.githubusercontent.com/danilosetra/react-responsive-spritesheet/master/assets/images/examples/sprite-image-horizontal.png`}
+          widthFrame={420}
+          heightFrame={500}
+          steps={14}
+          fps={10}
+          autoplay={true}
+          loop={true}
+        />
       </div>
     );
   }
 }
 
 export default App;
+
+
+
+
