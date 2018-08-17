@@ -1,24 +1,21 @@
 
 ## Table of Contents
-- [Folder Structure](#folder-structure)
+- [Installation](#installation)
+- [Setup](#setup)
+## Installation
 
-## Folder Structure
-
-After creation, your project should look like this:
+Clone the repository with the following command
 
 ```
-my-app/
-  README.md
-  node_modules/
-  package.json
-  public/
-    index.html
-    favicon.ico
-  src/
-    App.css
-    App.js
-    App.test.js
-    index.css
-    index.js
-    logo.svg
+git clone https://github.com/ilaydagurbak/xulapp
+```
+
+## Setup
+
+Go to the project folder and install the dependencies with the following command
+
+```
+cd xulapp
+npm install
+npm start
 ```
