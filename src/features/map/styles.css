@@ -1,0 +1,15 @@
+.image {
+    display: inline-flex
+}
+
+.backgroundimage {
+    background-color: aqua
+}
+
+.desk {
+    background-image : url('/public/images/desk.png')
+}
+
+.worker{
+    background-image : url('/public/images/worker.png')
+}
