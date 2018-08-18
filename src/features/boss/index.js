@@ -23,13 +23,13 @@ class Boss extends Component {
         let actualMode = this.state.actualMode;
         let mode = this.state.mode;
         if(this.state.actualMode =="down" && this.state.y>parseInt(this.state.level.height) - 150){
-            nextPostionY = nextPostionY-50
+            nextPostionY = nextPostionY
             actualMode = "top"
             mode=[{"width":"27px","height":"30px","backgroundPosition":"0px -32px"}];
         }else if(this.state.actualMode =="top" && this.state.y<0 + 150)
         {
-            nextPostionY = nextPostionY+50
-            nextPostionY = nextPostionY-50
+            nextPostionY = nextPostionY
+            nextPostionY = nextPostionY
             actualMode = "down"
             mode= [{"width":"27px","height":"30px","backgroundPosition":"0px 0px"}];
         }else if(this.state.actualMode =="down" )
@@ -38,8 +38,7 @@ class Boss extends Component {
         
         }else if(this.state.actualMode =="top")
         {
-            nextPostionY = nextPostionY-50
-            
+            nextPostionY = nextPostionY-50   
         }
 
         this.setState({

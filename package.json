@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "phaser": "^3.11.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "react-phaser": "^0.1.6",
     "react-redux": "^5.0.7",
     "react-responsive-spritesheet": "^2.3.9",
     "react-scripts": "1.1.4",

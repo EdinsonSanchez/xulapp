@@ -3,6 +3,7 @@ import Player from '../player'
 import Boss from '../boss'
 import Map from '../map'
 
+import Menu from '../screens/startMenu'
 function Container(props) {
     return (
         <div 
@@ -17,6 +18,7 @@ function Container(props) {
             <Map />
             <Player />
             <Boss/>
+            <Menu/>
         </div>
     )
 }
