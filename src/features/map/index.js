@@ -15,7 +15,10 @@ function getImageSprite(type) {
       return 'worker'
   }
 }
+function getTilePosition(){
+  mode:[{"width":"27px","height":"30px","backgroundPosition":"0px 0px"}]
 
+}
 function MapImage(props) {
   return <div 
   className={`image ${getImageSprite(props.image)}`}

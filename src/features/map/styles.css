@@ -3,12 +3,12 @@
 }
 
 .backgroundimage {
-    background-position: 0px -145px;
-    background-size: 757px;
+    background-position: 5px -96px;
+    
 }
 
 .desk {
-
+    background-position: 0px -145px;
 }
 
 .worker{
@@ -17,6 +17,7 @@
 .row{
     margin: 0;
     padding: 0;
-    background: red;
+    background: #e1e1e1;
     height: 40px;
+   
 }
