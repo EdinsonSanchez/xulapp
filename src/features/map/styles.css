@@ -3,13 +3,20 @@
 }
 
 .backgroundimage {
-    background-color: aqua
+    background-position: 0px -145px;
+    background-size: 757px;
 }
 
 .desk {
-    background-image : url('/public/images/desk.png')
+
 }
 
 .worker{
     background-image : url('/public/images/worker.png')
+}
+.row{
+    margin: 0;
+    padding: 0;
+    background: red;
+    height: 40px;
 }

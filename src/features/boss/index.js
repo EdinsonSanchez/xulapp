@@ -47,7 +47,6 @@ class Boss extends Component {
           actualMode:actualMode,
           mode:mode
         });
-        
       }
       update() {
           this.movePlayer();

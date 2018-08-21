@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { SPRITE_SIZE } from '../../config/constants'
+import maptile from './map1.png'
 
 import './styles.css'
 
@@ -20,14 +21,17 @@ function MapImage(props) {
   className={`image ${getImageSprite(props.image)}`}
   style={{
     height: SPRITE_SIZE,
-    width: SPRITE_SIZE
+    width: SPRITE_SIZE,
+    backgroundImage: `url('${maptile}')`,
+
   }}
   >
-  {props.image}
+ 
   </div>
 }
 
 function  MapRow(props) {
+ 
   return <div className="row">
   {
   props.images.map( image => <MapImage image={image} /> )
@@ -36,6 +40,7 @@ function  MapRow(props) {
 }
 
 function Map(props) {
+ 
     return(
     <div
     style={{
@@ -44,9 +49,10 @@ function Map(props) {
       left: '0px',
       width: '800px',
       height: '400px',
-      border: '4px solid white',
+      
     }}
   >
+
   {
     props.images.map( row => <MapRow images={row}/> )
   }

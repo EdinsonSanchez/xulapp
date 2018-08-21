@@ -21,7 +21,7 @@ function Container(props) {
             margin: '200px auto',
         }}
         >
-            <Map images={images}/>
+            <Map images={images} />
             <Player />
             <Boss/>
             <Menu/>
