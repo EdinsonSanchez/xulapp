@@ -3,21 +3,21 @@
 }
 
 .backgroundimage {
-    background-position: 5px -96px;
+    
     
 }
 
 .desk {
-    background-position: 0px -145px;
+   
 }
 
 .worker{
-    background-image : url('/public/images/worker.png')
+
 }
 .row{
     margin: 0;
     padding: 0;
-    background: #e1e1e1;
+    background: #0f272d;;
     height: 40px;
    
 }

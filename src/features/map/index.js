@@ -2,30 +2,32 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { SPRITE_SIZE } from '../../config/constants'
 import maptile from './map1.png'
+import  {types} from './types'
 
 import './styles.css'
 
+ 
 function getImageSprite(type) {
+
+
   switch(type) {
     case 0: 
-      return 'backgroundimage'
+      return types[type].obj[0].class
     case 5: 
-      return 'desk'
+    return types[type].obj[0].class
     case 6: 
-      return 'worker'
+    return types[type].obj[0].class
   }
 }
-function getTilePosition(){
-  mode:[{"width":"27px","height":"30px","backgroundPosition":"0px 0px"}]
-
-}
 function MapImage(props) {
+  
   return <div 
   className={`image ${getImageSprite(props.image)}`}
   style={{
     height: SPRITE_SIZE,
     width: SPRITE_SIZE,
     backgroundImage: `url('${maptile}')`,
+    ...types[props.image].obj[0].css
 
   }}
   >
@@ -35,9 +37,9 @@ function MapImage(props) {
 
 function  MapRow(props) {
  
-  return <div className="row">
+  return <div className="row" >
   {
-  props.images.map( image => <MapImage image={image} /> )
+  props.images.map( (image,i) => <MapImage image={image}index={i}key={`r-${i}-${Math.random()}`} /> )
   }
   </div>
 }
@@ -57,8 +59,9 @@ function Map(props) {
   >
 
   {
-    props.images.map( row => <MapRow images={row}/> )
-  }
+  props.images.map( (row,i) => <MapRow images={row}  key={`r-${i}-${Math.random()}`} index={i}/> )
+}
+
   </div>
  )
 }
