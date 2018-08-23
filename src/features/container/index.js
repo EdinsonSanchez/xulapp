@@ -22,9 +22,7 @@ function Container(props) {
         }}
         >
             <Map images={images} />
-            <Player />
-            <Boss/>
-            <Menu/>
+            
         </div>
     )
 }

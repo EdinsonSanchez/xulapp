@@ -3,6 +3,8 @@ import { connect } from 'react-redux'
 import { SPRITE_SIZE } from '../../config/constants'
 import maptile from './map1.png'
 import  {types} from './types'
+import Player from '../player'
+import Boss from '../boss'
 
 import './styles.css'
 
@@ -44,9 +46,14 @@ function  MapRow(props) {
   </div>
 }
 
-function Map(props) {
- 
-    return(
+class Map extends React.Component  {
+  constructor(props){
+    super(props);
+    this.state={images:this.props.images}
+    };
+
+ render(){
+  return(
     <div
     style={{
       position: 'relative',
@@ -59,11 +66,14 @@ function Map(props) {
   >
 
   {
-  props.images.map( (row,i) => <MapRow images={row}  key={`r-${i}-${Math.random()}`} index={i}/> )
+ this.props.images.map( (row,i) => <MapRow images={row}  key={`r-${i}-${Math.random()}`} index={i}/> )
 }
-
+{<Player />}
+{ <Boss/>}
   </div>
  )
+ }
+
 }
 
 export default Map
