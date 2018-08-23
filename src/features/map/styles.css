@@ -1,23 +1,24 @@
-.image {
-    display: inline-flex
+.tile {
+  display: inline-flex;
+  background-color: lightskyblue;
 }
 
-.backgroundimage {
-    
-    
+.background {
+  background-image: url('/tiles/background.png')
+}
+
+.coworkers {
+  background-image: url('/tiles/coworkers.png')
 }
 
 .desk {
-   
+  background-image: url('/tiles/desk.png')
 }
 
-.worker{
-
+.coffee {
+  background-image: url('/tiles/coffee.png')
 }
-.row{
-    margin: 0;
-    padding: 0;
-    background: #0f272d;;
-    height: 40px;
-   
+
+.bug {
+  background-image: url('/tiles/bug.png')
 }

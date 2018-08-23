@@ -1,14 +1,15 @@
 import { createStore, combineReducers } from 'redux'
 import playerReducer from '../features/player/reducer'
-import bossReducer from '../features/player/reducer'
+import mapReducer from '../features/map/reducer'
+
 const rootReducer = combineReducers({
-    player: playerReducer,
-    boss: bossReducer,
+  player: playerReducer,
+  map: mapReducer,
 })
 
 const store = createStore(
-    rootReducer,
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
-  )
-  
-  export default store
+  rootReducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+)
+
+export default store
